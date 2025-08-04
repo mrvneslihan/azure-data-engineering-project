@@ -28,7 +28,7 @@ To meet these requirements, the solution is broken down into the following compo
 3. **Data Loading and Reporting**:
     - Load the transformed data into Azure Synapse Analytics.
     - Build a Power BI dashboard to visualize the data, allowing stakeholders to explore sales and demographic insights.
-
+    
 4. **Automation**:
     - Schedule the pipeline to run daily, ensuring that the data and reports are always up-to-date.
 
@@ -67,11 +67,13 @@ To meet these requirements, the solution is broken down into the following compo
 
 1. **Mount Data Lake in Databricks**: Configure Databricks to access ADLS.
 2. **Transform Data**: Use Databricks notebooks to clean and aggregate the data, moving it from `bronze` to `silver` and then to `gold`.
+![copy_all_tables](https://github.com/mrvneslihan/azure-data-engineering-project/blob/main/docs/copy_all_tables.png)
 
 ### Step 4: Data Loading and Reporting
 
 1. **Load Data into Synapse**: Set up a Synapse SQL pool and load the `gold` data for analysis.
 2. **Create Power BI Dashboard**: Connect Power BI to Synapse and create visualizations based on business requirements.
+![creating_views](https://github.com/mrvneslihan/azure-data-engineering-project/blob/main/docs/creating_views.png)
 
 ### Step 5: Automation and Monitoring
 
@@ -86,6 +88,30 @@ To meet these requirements, the solution is broken down into the following compo
 
 1. **Trigger and Test Pipelines**: Insert new records into the SQL database and verify that the entire pipeline runs successfully, updating the Power BI dashboard.
 
-## Conclusion
+## 📂 Repository Structure
+```
+azure-data-engineering-project/
+│
+├── dataset/                           
+│   ├── AdventureWorksLT2022.bak        # Raw dataset file
+│
+├── docs/                               # Project architecture and dashboard files
+│   ├── copy_all_tables.png             # Data Factory Pipeline for copying tables
+│   ├── creating_views.png              # Azure Synapse Analytics Pipeline for creating gold data views
+│   ├── dashboard.pbix                  # PowerBI file used for visualization
+│   ├── dashboard.png                   # Dashboard
+│   ├── data_model.png                  # Data model
+│
+├── scripts/                            # Project scripts
+│   ├── bronze to silver.jpynb/         # Scripts for extracting and loading raw data
+│   ├── silver to gold.jpynb/           # Scripts for cleaning and transforming silver data
+│   ├── create_user_grant_access.sql    # SQL script for creating user and granting access
+│
+├── README.md                           # Project overview and instructions
+└── LICENSE                             # License information for the repository
+```
+---
 
+## Conclusion
+![Dashboard](https://github.com/mrvneslihan/azure-data-engineering-project/blob/main/docs/dashboard.png)
 This project provides a robust end-to-end solution for understanding customer demographics and their impact on sales. The automated data pipeline ensures that stakeholders always have access to the most current and actionable insights.
