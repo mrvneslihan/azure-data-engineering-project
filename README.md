@@ -105,8 +105,8 @@ azure-data-engineering-project/
 │   ├── data_model.png                  # Data model
 │
 ├── scripts/                            # Project scripts
-│   ├── bronze to silver.jpynb/         # Scripts for extracting and loading raw data
-│   ├── silver to gold.jpynb/           # Scripts for cleaning and transforming silver data
+│   ├── bronze to silver.jpynb          # Scripts for extracting and loading raw data
+│   ├── silver to gold.jpynb            # Scripts for cleaning and transforming silver data
 │   ├── create_user_grant_access.sql    # SQL script for creating user and granting access
 │
 ├── README.md                           # Project overview and instructions
