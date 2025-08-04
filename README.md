@@ -118,7 +118,7 @@ azure-data-engineering-project/
 ![Dashboard](https://github.com/mrvneslihan/azure-data-engineering-project/blob/main/docs/dashboard.png)
 This project provides a robust end-to-end solution for understanding customer demographics and their impact on sales. The automated data pipeline ensures that stakeholders always have access to the most current and actionable insights.
 
-Contact Information
+## Contact Information
 For any questions, suggestions, or feedback, feel free to reach out:
 
 - **Email:** merveneslihan08@gmail.com
