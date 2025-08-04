@@ -88,7 +88,7 @@ To meet these requirements, the solution is broken down into the following compo
 
 1. **Trigger and Test Pipelines**: Insert new records into the SQL database and verify that the entire pipeline runs successfully, updating the Power BI dashboard.
 
-## 📂 Repository Structure
+## Repository Structure
 ```
 azure-data-engineering-project/
 │
@@ -110,8 +110,17 @@ azure-data-engineering-project/
 ├── README.md                           # Project overview and instructions
 └── LICENSE                             # License information for the repository
 ```
----
 
 ## Conclusion
 ![Dashboard](https://github.com/mrvneslihan/azure-data-engineering-project/blob/main/docs/dashboard.png)
 This project provides a robust end-to-end solution for understanding customer demographics and their impact on sales. The automated data pipeline ensures that stakeholders always have access to the most current and actionable insights.
+
+Contact Information
+For any questions, suggestions, or feedback, feel free to reach out:
+
+- **Email:** merveneslihan08@gmail.com
+- **LinkedIn:** [My LinkedIn Profile](www.linkedin.com/in/merveneslihanokcu)
+- **GitHub:** [My GitHub Profile](https://github.com/mrvneslihan)
+
+## License
+This project is licensed under the [MIT License](LICENSE). You are free to use, modify, and share this project with proper attribution.
