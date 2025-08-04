@@ -67,12 +67,14 @@ To meet these requirements, the solution is broken down into the following compo
 
 1. **Mount Data Lake in Databricks**: Configure Databricks to access ADLS.
 2. **Transform Data**: Use Databricks notebooks to clean and aggregate the data, moving it from `bronze` to `silver` and then to `gold`.
+
 ![copy_all_tables](https://github.com/mrvneslihan/azure-data-engineering-project/blob/main/docs/copy_all_tables.png)
 
 ### Step 4: Data Loading and Reporting
 
 1. **Load Data into Synapse**: Set up a Synapse SQL pool and load the `gold` data for analysis.
 2. **Create Power BI Dashboard**: Connect Power BI to Synapse and create visualizations based on business requirements.
+
 ![creating_views](https://github.com/mrvneslihan/azure-data-engineering-project/blob/main/docs/creating_views.png)
 
 ### Step 5: Automation and Monitoring
@@ -112,6 +114,7 @@ azure-data-engineering-project/
 ```
 
 ## Conclusion
+
 ![Dashboard](https://github.com/mrvneslihan/azure-data-engineering-project/blob/main/docs/dashboard.png)
 This project provides a robust end-to-end solution for understanding customer demographics and their impact on sales. The automated data pipeline ensures that stakeholders always have access to the most current and actionable insights.
 
